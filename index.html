@@ -1,1 +1,138 @@
-index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,minimum-scale=0.5,user-scalable=no,maximum-scale=1,initial-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title></title>
+</head>
+<body style="margin:0 auto;">
+<style type="text/css">
+    body { margin:0!important; padding:0!important;top:0!important;left:0!important;transition:0s!important; font-family:"Helvetica"; } * { margin: 0; padding: 0; box-sizing: border-box; } body { background-color:#000!important; width:100%!important; height:100%!important; position:absolute; top:0px; } html { color: #fff; font-size: 16px!important; } .container { text-align: center; width: 100%; margin: 0 auto; background-color: rgba(0,0,0,0.3); height: 100%; position: absolute; overflow:hidden; } .hongbao { background: #d84e43; position:absolute; width: 90%; height: 80%; border-radius: 10px; margin-left:5%; margin-top:5%; } .topcontent { height: 70%; border: 1px solid #e1544a; background-color: #e05449; border-radius: 5px 5px 50% 50% / 5px 5px 15% 15%; box-shadow: 0px 2px 0px -1px #cd4838; } .avatar { position: relative; } .avatar span { position: absolute; top: 5px; left: 15px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); font-size: 36px; font-weight: bolder; color:#b43d35; } #close { color: #000; } .avatar img { width:70px; height:70px; border: 1px solid #ff4150; border-radius: 50%; overflow: hidden; margin-top: 15%; } .topcontent h2 { color: #f0e9b3; font-size: 12px; font-weight:normal; } .text { color: #f0e9b3; font-size: 12px; } .description { color: #f0e9b3; margin: 12% 0; font-size: 22px; } #chai { width: 100px; height: 100px; border: 1px solid #dcbc83; background-color: #dcbc83; border-radius: 50%; color: #3b3b3b; font-size:40px; font-weight:500; display: inline-block; margin-top: -100px; margin-bottom:25px; box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2); } #chai2 { width: 90px; height: 90px; border: 1px solid #d1b27c; margin-top:4px; border-radius: 50%; display: inline-block; } #chai span { margin-top: 20px; display: inline-block; } .rotate { -webkit-animation: anim .6s infinite alternate; -ms-animation: anim .6s infinite alternate; animation: anim .6s infinite alternate; } @-webkit-keyframes anim { from { -webkit-transform: rotateY(180deg); } to { -webkit-transform: rotateY(360deg); } } @-ms-keyframes anim { from { -ms-transform: rotateY(180deg); } to { -ms-transform: rotateY(360deg); } } @keyframes anim { from { transform: rotateY(180deg); } to { transform: rotateY(360deg); } } .weui_dialog { position: fixed; z-index: 133333; width: 85%; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-color: #FAFAFC; text-align: center; border-radius: 3px; font-family:arial; } .weui_mask { position: fixed; z-index: 1; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0, 0, 0, 0.6); } .weui_dialog_hd { padding: 1.2em 0 .5em; } .weui_dialog_bd { padding: 0 20px; font-size: 16px; color: #888; word-wrap: break-word; word-break: break-all; } .weui_dialog_ft { position: relative; line-height: 42px; margin-top: 20px; font-size: 17px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; } .weui_dialog_ft:after { content: " "; position: absolute; left: 0; top: 0; width: 100%; height: 1px; border-top: 1px solid #D5D5D6; color: #D5D5D6; -webkit-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: scaleY(0.5); transform: scaleY(0.5); } .weui_btn_dialog.primary { color: #0BB20C; } .weui_dialog_ft a { display: block; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; color: #3CC51F; text-decoration: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); } .weui_dialog_title { font-weight: 400; font-size: 17px; color:#000; } #shade { background: rgba(0, 0, 0, 0.9); z-index: 1000; position: absolute; left: 0; top: 0; width: 100%; height: 100%; display:none; } .share { position: absolute; left: 0; top: 0; right: 0; bottom: 0; padding: 80px 14px; cursor: pointer; display:none; } .share img { width: 100%; max-width: 608px; margin: 0 auto } @-webkit-keyframes lhb { 0% { -webkit-transform:scale(1,1); } 50% { -webkit-transform:scale(1.1,1.1); } 100% { -webkit-transform:scale(1,1); } } input { border:none } #showmain{background:#fffaf5;} .main { width:100%; margin:auto; margin-top:-20px; } .top { width:100%; box-shadow: 0 1px 0 -1px rgba(0, 0, 0, 0.2); line-height:100px; text-align:center; background:#d84e43; border-radius: 0px 0px 50% 50%; color:#FFF; margin:auto; height:7.5em; } #qrcode { width: 80px; height: 80px; margin:auto; text-align:center; border-radius: 50%; margin-top:-40px; } .yaoqing { margin-top:78px; font-size:14px; color:#FFFFFF } #qrcode img { margin-top:5px; width:70px; height:70px; border-radius: 50%; } .bottom { width:100%; margin:auto } .hongbao{ -webkit-animation: thb linear .4s 1; } @-webkit-keyframes thb{0%{-webkit-transform:scale(0,0);}50%{-webkit-transform:scale(1.1,1.1);}75%{-webkit-transform:scale(0.9,0.9);}100%{-webkit-transform:scale(1,1);}} .gray{ -webkit-animation: lhb linear .5s infinite; } @-webkit-keyframes lhb{0%{-webkit-transform:scale(1,1);}50%{-webkit-transform:scale(1.1,1.1);}100%{-webkit-transform:scale(1,1);}}
+</style>
+<div class="container" id="container" style="max-width:640px;top:5%;">
+    <div class="hongbao">
+        <div class="topcontent">
+            <div class="avatar"><img
+                    src="http://ww2.sinaimg.cn/mw690/006A35UYgw1fb6p6mrlblj303o03owea.jpg"/></div>
+            <div style="padding-top:10px;margin:0 auto;"><img
+                    src="http://ww3.sinaimg.cn/mw690/006A35UYgw1fb6q8u4zrdj30d003awek.jpg"
+                    style="width:50%;"></div>
+            <div style="padding-top:20px;margin:0 auto;"><img
+                    src="http://ww3.sinaimg.cn/mw690/006A35UYgw1faltxepb6kj30it029jrh.jpg"
+                    style="width:70%;"></div>
+        </div>
+        <div class="chai" id="chai">
+            <div id="chai2"><span>開</span></div>
+        </div>
+        <div style="padding-top:20px;margin:0 auto;"><img
+                src="http://ww2.sinaimg.cn/mw690/006A35UYgw1faltx5x5g9j30ad01ywee.jpg"
+                style="width:35%;"></div>
+    </div>
+</div>
+<div id="showmain" style=" background-color:#fffaf5; overflow:auto; display:none;">
+    <section class="top"><img width='100px'
+                              src="http://ww3.sinaimg.cn/mw690/006A35UYgw1fb6p6nm2p6j3061035glo.jpg">
+    </section>
+    <section class="main">
+        <div id="qrcode"><img src="http://ww2.sinaimg.cn/mw690/006A35UYgw1fb6p6mrlblj303o03owea.jpg"/>
+        </div>
+    </section>
+    <img onclick="showtip()" src="https://img.yzcdn.cn/upload_files/2016/10/18/4000f79c2c98aeb69349f25d530f5962.jpg?"
+         class="fenxiang_w"
+         style=" display:block; width:100%; position:fixed; z-index:999; top:0px; left:0px;display:none"/>
+    <div id="mask" class="mask">&nbsp;</div>
+    <style type="text/css">
+        .mask {
+            display: none;
+            position: absolute;
+            top: 0;
+            filter: alpha(opacity=75);
+            background-color: #000;
+            z-index: 62;
+            left: 0;
+            opacity: .8;
+            -moz-opacity: .8
+        }
+
+        .hbAvList li {
+            margin-left: 25px;
+            border-bottom: 1px solid #e5e5e5;
+            clear: both;
+            padding: 20px 0;
+            overflow: hidden;
+            color: #000
+        }
+
+        .hbAvList li img {
+            display: block;
+            float: left;
+            border-radius: 50%;
+            width: 2.5em
+        }
+
+        fieldset, img {
+            border: none;
+            vertical-align: middle
+        }
+
+        .hbAvList li .hbName {
+            display: block;
+            float: left;
+            margin-left: 12px
+        }
+
+        .hbMoney {
+            float: right;
+            padding-right: 27px
+        }
+
+        .hbAvList li .hbName h3 {
+            font-size: 18px;
+            font-weight: 400;
+            max-width: 115px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap
+        }
+
+        .hbAvList li .hbName p {
+            color: #aaa;
+            font-size: 12px
+        }
+
+        em {
+            font-style: normal
+        }
+    </style>
+    <section class="bottom">
+        <div style="text-align:center;">
+            <img width="40%" src="http://ww1.sinaimg.cn/mw690/006A35UYgw1fb6p6n3c84j30bh043dg0.jpg">
+        </div>
+        <div style="text-align:center;color:#000000;">
+            <span id="get_money" style=" font-size:3em;">0</span><span style=" font-size:3em;">.00</span>元
+            <p>
+                <a href="javascript:showMask();" style=" width: 80%; height:50px; font-size: 18px; line-height: 50px; border-radius: 8px; background: #d94e42; color: #fff; text-align: center; margin: 18px auto 10px auto; display: block; text-decoration:none;">
+                    点此立即提現
+                </a>
+            </p>
+        </div>
+        <div style=" background-color:#faf6f1; padding:0.5em; border-top:1px #f0eeea solid;  border-bottom:1px #f0eeea solid; margin-top:10px;">
+            <img width="40%" src="http://ww2.sinaimg.cn/mw690/006A35UYgw1faltx9pgd3j308x01kmx1.jpg">
+        </div>
+        <div>
+            <ul class="hbAvList">
+            </ul>
+        </div>
+    </section>
+</div>
+<div style="display:none" id="tj51" name="tj51">
+</div>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script>window.ourself_domain=true;</script>
+<script src="//cf3.oss-cn-hangzhou.aliyuncs.com/gift/js/index.js"></script>
+</body>
+</html>
